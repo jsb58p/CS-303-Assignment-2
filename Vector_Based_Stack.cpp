@@ -2,11 +2,6 @@
 #include <vector>
 #include <iostream>
 
-
-#include <stack>
-#include <vector>
-#include <iostream>
-
 int average(std::stack<int, std::vector<int>>); //function header for finding average
 
 int main() {
