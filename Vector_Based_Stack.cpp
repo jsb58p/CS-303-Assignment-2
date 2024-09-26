@@ -2,7 +2,7 @@
 #include <vector>
 #include <iostream>
 
-int average(std::stack<int, std::vector<int>>); //function header for finding average
+int average(std::stack<int, std::vector<int>>); //function header for finding average value of stack elements
 
 int main() {
 	std::stack<int, std::vector<int>> numbers; //create a stack object using a vector container for holding integers
@@ -32,7 +32,7 @@ int main() {
 	
 }
 
-int average(std::stack<int, std::vector<int>> theStack) { //finds the average value of the elements
+int average(std::stack<int, std::vector<int>> theStack) { //finds the average value of the stack elements
 	/*Find Average Value of stack elements*/
 	int size = theStack.size(); //set av to the size of the list, will be divided from sum at the end for the real average
 	int sum = 0;		//sum of the numbers, starts with 0
