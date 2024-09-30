@@ -90,6 +90,7 @@ void Single_Linked_List<Item_Type>::pop_back() {
 	/*If there is one item in the list, delete it*/
 	else if (head == tail) {
 		delete tail;
+		num_items--;
 	}
 	/*else, create a new node pointer, assign head to it, then traverse through the list until the next item is tail. Then, assign the new node pointer to tail. Tail now reference the next-to-last item. 
 	Iterate the new node pointer once more, to the item that was the old tail, and delete it*/
