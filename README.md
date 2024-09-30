@@ -6,7 +6,7 @@
 
 # Assignment 2 - Single Linked List
 
-- Node.h and Single_Linked_List.h must be in the same repository with the main file Single_Linked_List.cpp.
+- Node.h, Single_Linked_List.h, and Single_Linked_List_Imp.tpp must be in the same repository with the main file Single_Linked_List.cpp.
 
   ---
 ## Function Descriptions
