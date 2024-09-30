@@ -32,5 +32,5 @@ int main() {
     std::cout << list.empty() << std::endl;
 
 
-	return 0;
+    return 0;
 }
