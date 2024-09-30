@@ -27,3 +27,7 @@ public:
 	size_t num_items;		//keeps track of the number of items in the list
 
 };
+
+#include "Single_Linked_List.tpp"
+
+#endif
