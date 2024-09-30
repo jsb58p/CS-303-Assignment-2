@@ -70,8 +70,10 @@ void Single_Linked_List<Item_Type>::pop_front() {
 	/*if there is one item in the list, delete it*/
 	else if (head == tail) {
 		delete head;
+		num_items--;
 	}
-	/*else, create a node pointer, assign head to it, assign the next item in the list to head, then delete the original head*/	else {
+	/*else, create a node pointer, assign head to it, assign the next item in the list to head, then delete the original head*/	
+	else {
 		Node<Item_Type>* toDelete = head;
 		head = head->next;
 		delete toDelete;
