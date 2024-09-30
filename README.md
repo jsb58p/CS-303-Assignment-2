@@ -22,19 +22,18 @@
 
 ---
 - **void pop_front()**
-  : Removes the first element in the list container, reducing its size by one. No return value. Causes an error if the list is empty.
-
+  : Removes the first element in the list container, reducing its size by one. No return value. 
 ---
  - **void pop_back()**
-: Removes the last element in the list container, reducing its size by one. No return value. Causes an error if the list is empty. 
+: Removes the last element in the list container, reducing its size by one. No return value.
 
  ---
   - **Item_Type front() const**
-  : Access first element. Returns the element of type **Item_Type**.
+  : Access first element. Returns the element of type **Item_Type**. Causes an error if the list is empty. 
 
   ---
    - **Item_Type back() const**
-     : Access last element. Returns the element of type **Item_Type**.
+     : Access last element. Returns the element of type **Item_Type**. Causes an error if the list is empty. 
 
   ---
    - **bool empty() const**
