@@ -3,7 +3,6 @@
 #include "Node.h"
 
 
-
 template<typename Item_Type>
 class Single_Linked_List {
 public:
@@ -20,7 +19,7 @@ public:
 	size_t find(const Item_Type&);	//Return the position of the first occurrence of item if it is found.Return the size of the list if it is not found.
 
 	/*constructor, sets num_items to 0*/
-	Single_Linked_List<Item_Type>(): num_items(0) {}
+	Single_Linked_List<Item_Type>() : num_items(0) {}
 
 	Node<Item_Type>* head; //pointer keeps track of first item in list
 	Node<Item_Type>* tail;	//pointer keeps track of last item in list
@@ -28,6 +27,6 @@ public:
 
 };
 
-#include "Single_Linked_List.tpp"
+#include "Single_Linked_List_Imp.tpp"
 
 #endif
