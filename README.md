@@ -1,5 +1,5 @@
 # Assignment 2
-1. [Assignment 2 - Single Linked List](https://github.com/jsb58p/CS-303-Assignment-2/edit/main/README.md#assignment-2---single-linked-list)
+1. [Assignment 2 - Single Linked List]([https://github.com/jsb58p/CS-303-Assignment-2/edit/main/README.md#assignment-2---single-linked-list](https://github.com/jsb58p/CS-303-Assignment-2/blob/main/README.md#assignment-2---single-linked-list))
 2. [Assignment 2 - Implement a stack of integers using a vector](https://github.com/jsb58p/CS-303-Assignment-2/edit/main/README.md#assignment-2---implement-a-stack-of-integers-using-a-vector)
 
 
