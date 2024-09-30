@@ -91,7 +91,7 @@
 ---
 # Assignment 2 - Implement a stack of integers using a vector
 
--Vector_Based_Stack.h, Vector_Based_Stack_Imp.cpp, and Vector_Based_Stack.cpp must be in the same repository.
+- Vector_Based_Stack.h, Vector_Based_Stack_Imp.cpp, and Vector_Based_Stack.cpp must be in the same repository.
 
 ---
 ## Function Descriptions
