@@ -42,7 +42,7 @@ void Single_Linked_List<Item_Type>::pop_front() {
 	else if (head == tail) {
 		delete head;
 	}
-	/*else, create a node pointer, assign head to it, assign the next item in the list to head, then delete the original head*/	
+	/*else, create a node pointer, assign head to it, assign the next item in the list to head, then delete the original head*/
 	else {
 		Node<Item_Type>* toDelete = head;
 		head = head->next;
@@ -62,7 +62,7 @@ void Single_Linked_List<Item_Type>::pop_back() {
 		delete tail;
 		num_items--;
 	}
-	/*else, create a new node pointer, assign head to it, then traverse through the list until the next item is tail. Then, assign the new node pointer to tail. Tail now reference the next-to-last item. 
+	/*else, create a new node pointer, assign head to it, then traverse through the list until the next item is tail. Then, assign the new node pointer to tail. Tail now reference the next-to-last item.
 	Iterate the new node pointer once more, to the item that was the old tail, and delete it*/
 	else {
 		Node<Item_Type>* temp = head;
@@ -115,7 +115,7 @@ bool Single_Linked_List<Item_Type>::empty() const {
 template<typename Item_Type>
 void Single_Linked_List<Item_Type>::insert(size_t index, const Item_Type& item) {
 	/*If index is larger than the highest position on the list, call push_back to insert item at end of list*/
-	if (index > num_items-1 || num_items == 0) {
+	if (index > num_items - 1 || num_items == 0) {
 		push_back(item);
 	}
 	/*Else if index is 0, call push_front to insert item at beginning of list.*/
@@ -123,17 +123,17 @@ void Single_Linked_List<Item_Type>::insert(size_t index, const Item_Type& item) 
 		push_front(item);
 	}
 	/*Else if index is in between the first and last position on the list...*/
-	else if (index <= num_items-1 && index > 0) {
+	else if (index <= num_items - 1 && index > 0) {
 		Node<Item_Type>* toInsert = head;		//create new node pointer, start by pointing to head
-		for (size_t i = 0; i < index-1; i++) {	//traverse the list up to the node before the index being inserted into
-			toInsert = toInsert->next;			
+		for (size_t i = 0; i < index - 1; i++) {	//traverse the list up to the node before the index being inserted into
+			toInsert = toInsert->next;
 		}
 		Node<Item_Type>* temp = new Node<Item_Type>(item); //create a new node, assign it to temp node pointer
 		temp->next = toInsert->next;		//the new node should point to the node after the node being pointed to by toInsert
 		toInsert->next = temp;				//the node that toInsert is pointing to should now point to the newly created node. 
 		num_items++;		//increment num_items.
 	}
-	
+
 }
 
 template<typename Item_Type>
@@ -148,12 +148,12 @@ bool Single_Linked_List<Item_Type>::remove(size_t index) {
 		return true;
 	}
 	/*if index is the last possible index in the list, then call pop_back to remove the last item on the list, return true*/
-	if (index == num_items-1) {
+	if (index == num_items - 1) {
 		pop_back();
 		return true;
 	}
 	/*if index is outside the bounds of the list, return false */
-	if (index > num_items-1 || index < 0){
+	if (index > num_items - 1 || index < 0) {
 		return false;
 	}
 	/*else, create a node pointer, assign head to it ...*/
@@ -167,7 +167,7 @@ bool Single_Linked_List<Item_Type>::remove(size_t index) {
 		delete toRemove;							//delete the item being removed
 		num_items--;								//decrement num_items
 		return true;								//return true after item removal
-		
+
 	}
 }
 
