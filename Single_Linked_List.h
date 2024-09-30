@@ -29,8 +29,6 @@ public:
 };
 
 /*---------------------Implementation------------------ */
-//#include "Single_Linked_List.h"
-//#include "Node.h"
 template<typename Item_Type>
 void Single_Linked_List<Item_Type>::push_front(const Item_Type& the_value) {
 	Node<Item_Type>* temp = new Node<Item_Type>(the_value); //creates new node to be added to the list.
