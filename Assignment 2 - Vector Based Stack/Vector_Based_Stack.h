@@ -1,7 +1,7 @@
 #ifndef VECTOR_BASED_STACK_H_
 #define VECTOR_BASED_STACK_H_
 #include <vector>
-#include <cstddef>
+
 
 template<typename Item_Type>
 class vector_based_stack {
