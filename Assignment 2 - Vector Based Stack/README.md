@@ -5,7 +5,7 @@ Vector_Based_Stack.h, Vector_Based_Stack_Imp.tpp, and Vector_Based_Stack.cpp mus
 ---
 **Function Descriptions**
 
-**int average()** : Finds the average value of a stack of integer elements. Returns the integer value of the calculated average.
+**int average()** : Finds the average value of a stack of integer elements. Returns the integer value of the calculated average. Removes the stack elements during calculation.
 
 -All other functions use the C++ standard library vector class member functions.
 
