@@ -1,9 +1,5 @@
 #include "Vector_Based_Stack.h"
 
-/** Construct an initially empty stack. */
-
-
-
 /** Pushes an item onto the top of the stack.
 @param item The item to be inserted
 */
