@@ -1,10 +1,20 @@
 # Assignment 2 - Implement a stack of integers using a vector
 
 Vector_Based_Stack.h, Vector_Based_Stack_Imp.tpp, and Vector_Based_Stack.cpp must be in the same repository.
-Function Descriptions
+
+---
+**Function Descriptions**
+
 int average() : Finds the average value of a stack of integer elements. Returns the integer value of the calculated average.
 
--All other functions are provided by the C++ standard library vector class member functions.
+-All other functions use the C++ standard library vector class member functions.
+
+**push(const Item_Type&)** uses the function **push_back()**
+
+**top()** uses the function **back()**
+
+**pop()** uses the function **pop_back**
+
 
 ---
 ## Output
