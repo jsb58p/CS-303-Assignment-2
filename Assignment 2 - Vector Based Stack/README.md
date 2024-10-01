@@ -13,7 +13,7 @@ int average() : Finds the average value of a stack of integer elements. Returns 
 
 **top()** uses the function **back()**
 
-**pop()** uses the function **pop_back**
+**pop()** uses the function **pop_back()**
 
 
 ---
