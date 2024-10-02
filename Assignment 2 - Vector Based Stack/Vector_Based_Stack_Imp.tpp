@@ -49,15 +49,15 @@ return container.size();
 template<>
 int vector_based_stack<int>::average() { //finds the average value of the elements, if integer
 	/*Find Average Value of stack elements*/
-	int size = container.size(); //set av to the size of the list, will be divided from sum at the end for the real average
+	int stackSize = size(); //set stackSize to the size of the stack, will be divided from sum at the end for the average
 	int sum = 0;		//sum of the numbers, starts with 0
 
 	while (!container.empty()) {		//while list is not empty, add the top number, pop it, add the new top number, etc.
-		sum = sum + container.back();
-		container.pop_back();
+		sum = sum + top();
+		pop();
 	}
-	size = sum / size;			//average is the sum divided by the size of the list
-	return size;
+	
+	return sum/stackSize;			//average is the sum divided by the size of the list
 }
 
 
